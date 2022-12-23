@@ -19,3 +19,7 @@ for (int i = 0; i < NewArray.Length; i++)
 
 Console.WriteLine();
 Console.WriteLine("Введенный массив:" + "[" + String.Join(";", NewArray) + "]");
+
+string[] FinalArray = new string[count];
+
+int temp = 0;

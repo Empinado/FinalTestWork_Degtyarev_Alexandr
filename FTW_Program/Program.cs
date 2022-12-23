@@ -23,3 +23,15 @@ Console.WriteLine("Введенный массив:" + "[" + String.Join(";", Ne
 string[] FinalArray = new string[count];
 
 int temp = 0;
+
+for (int i = 0; i < NewArray.Length; i++)
+{
+    if (NewArray[i].Length <= 3)
+    {
+        FinalArray[temp] = NewArray[i];
+        temp++;
+    }
+}
+
+Console.WriteLine();
+Console.WriteLine("Финальный массив:" + "[" + String.Join(";", FinalArray) + "]");
